@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robótica Educativa</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header id="top" class="animacion">
+    <h1>Robótica Educativa</h1>
+    <p>Explorando la tecnología del futuro desde hoy</p>
+    <button id="modo-btn" onclick="cambiarModo()">🌙 Cambiar tema</button>
+  </header>
+
+  <nav>
+    <a href="#que-es">¿Qué es?</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#componentes">Componentes</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#videos">Videos</a>
+    <a href="formulario.html">Inscribirse</a>
+  </nav>
+
+  <section id="que-es" class="animacion">
+    <h2>¿Qué es la Robótica Educativa?</h2>
+    <p>
+      La robótica educativa utiliza robots como herramientas didácticas que ayudan a los estudiantes a aprender programación, ingeniería y lógica matemática de manera práctica.
+    </p>
+    <img src="img/robot1.jpg" alt="Robot educativo" class="imagen">
+  </section>
+
+  <section id="beneficios" class="animacion">
+    <h2>Beneficios</h2>
+    <ul>
+      <li>Fomenta la creatividad y el pensamiento crítico</li>
+      <li>Fortalece habilidades de resolución de problemas</li>
+      <li>Promueve el trabajo en equipo y la colaboración</li>
+      <li>Prepara a los estudiantes para profesiones del futuro</li>
+    </ul>
+    <img src="img/ninos-robot.png" alt="Niños con robots" class="imagen">
+  </section>
+
+  <section id="componentes" class="animacion">
+    <h2>Componentes de un Robot</h2>
+    <ul>
+      <li><strong>Sensores:</strong> Detectan el entorno</li>
+      <li><strong>Actuadores:</strong> Permiten el movimiento</li>
+      <li><strong>Controlador:</strong> Ejecuta instrucciones</li>
+      <li><strong>Estructura:</strong> Cuerpo del robot</li>
+    </ul>
+    <img src="img/componentes.jpg" alt="Componentes del robot" class="imagen">
+  </section>
+
+  <section id="actividades" class="animacion">
+    <h2>Actividades Sugeridas</h2>
+    <ol>
+      <li>Diseñar un robot que siga una línea</li>
+      <li>Simular un semáforo con luces LED</li>
+      <li>Crear un robot que evite obstáculos</li>
+      <li>Programar una coreografía con movimientos</li>
+    </ol>
+    <img src="img/actividad.jpg" alt="Actividad de robótica" class="imagen">
+  </section>
+
+  <section id="videos" class="animacion">
+    <h2>Video Educativo</h2>
+    <p>A continuación, un video introductorio a la robótica educativa:</p>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/whNREzfHzW8" title="Introducción a la Robótica Educativa" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <a href="#top" class="boton-flotante" title="Regresar al inicio">⬆</a>
+
+  <footer>
+    <p>Creado por Flores Jhonny | Lopez Joel | Medranda Anthony | Tenelema Ariel | Tonato Wendy </p>
+  </footer>
+
+  <script>
+    function cambiarModo() {
+      document.body.classList.toggle("modo-oscuro");
+      const btn = document.getElementById("modo-btn");
+      if (document.body.classList.contains("modo-oscuro")) {
+        btn.textContent = "☀️ Tema claro";
+      } else {
+        btn.textContent = "🌙 Cambiar tema";
+      }
+    }
+  </script>
+
+</body>
+</html>

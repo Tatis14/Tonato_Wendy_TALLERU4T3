@@ -1,0 +1,201 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    animation: aparecer 1s ease-out;
+  }
+  
+  nav {
+    background-color: #283593;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffeb3b;
+  }
+  
+  section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+  }
+  
+  .imagen {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .imagen:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes aparecer {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animacion {
+    animation: aparecer 1s ease-out;
+  }
+
+  .boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3f51b5;
+    color: white;
+    font-size: 24px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+    animation: parpadeo 1.5s infinite;
+  }
+  
+  .boton-flotante:hover {
+    background-color: #283593;
+    transform: scale(1.1);
+  }
+  
+  @keyframes parpadeo {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  #modo-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #modo-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  body.modo-oscuro {
+    background-color: #121212;
+    color: #eeeeee;
+  }
+  
+  body.modo-oscuro header,
+  body.modo-oscuro footer {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  body.modo-oscuro nav {
+    background-color: #222;
+  }
+  
+  body.modo-oscuro nav a {
+    color: #bbb;
+  }
+  
+  body.modo-oscuro section {
+    background-color: #1f1f1f;
+    color: #eee;
+  }
+  
+  body.modo-oscuro .boton-flotante {
+    background-color: #444;
+    color: white;
+  }
+  
+  body.modo-oscuro .boton-flotante:hover {
+    background-color: #666;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #283593;
+  }
+  
+  .btn-regresar {
+    display: inline-block;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-regresar:hover {
+    background-color: #283593;
+    transform: scale(1.05);
+  }
+  
